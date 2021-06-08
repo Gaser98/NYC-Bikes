@@ -8,9 +8,9 @@ bikes.describe()
 x = bikes['High Temp (°F)']
 y = bikes['Total']
 plt.scatter(x,y)
-
 reg = LinearRegression()
 reg.fit(x,y)
 y_pred = reg.predict(x)
 plt.scatter(x, y)
 plt.plot(x, y_pred, color='green', linewidth=4)
+
